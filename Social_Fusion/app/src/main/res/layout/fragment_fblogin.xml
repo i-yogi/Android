@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogidevelopers.yogiandroid.socialfusion.ver_10_22.fcbk.FBLoginFragment">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/feedinLogIn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/inputTextIN"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/inputLimitIN"
+            android:hint="Enter number of posts to get"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/inputLimitIN"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Fetch" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/FbRecyclerFeedIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inputTextIN"
+            android:paddingTop="5dp"
+            android:background="@color/com_facebook_blue"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

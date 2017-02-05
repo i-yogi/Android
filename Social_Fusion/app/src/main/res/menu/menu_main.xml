@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yogidevelopers.yogiandroid.socialfusion.main.MainActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/facebook_logout"
+        android:orderInCategory="100"
+        android:title="Facebook Log Out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/twitter_signout"
+        android:orderInCategory="100"
+        android:title="Twitter Sing Out"
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:id="@+id/create_Post"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Post to Timelines"-->
+        <!--app:showAsAction="never" />-->
+</menu>

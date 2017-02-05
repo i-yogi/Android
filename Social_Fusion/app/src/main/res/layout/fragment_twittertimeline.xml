@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ref_implmntn.twitter.TwitterTimelineFragment">
+
+    <EditText
+        android:id="@+id/inputTw"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/inputTwLimit"
+        android:hint="Enter number of tweets to get"
+        android:inputType="number"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/inputTwLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Fetch" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/TWRecyclerFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inputTw"
+        android:layout_marginTop="2dp"
+        android:background="@color/tw__blue_default"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

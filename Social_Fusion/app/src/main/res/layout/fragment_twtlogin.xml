@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogidevelopers.yogiandroid.socialfusion.ver_10_22.twtr.TwitterLoginFragment">
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/tweetIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:focusableInTouchMode="true"
+            android:id="@+id/limitTextIn"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/limitSetButton"
+            android:hint="Enter number of posts to get"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/limitSetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Fetch" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/TwRecyclerViewIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/limitTextIn"
+            android:background="@color/tw__blue_default"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

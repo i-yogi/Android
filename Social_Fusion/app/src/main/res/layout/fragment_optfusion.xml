@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogidevelopers.yogiandroid.socialfusion.ver_10_22.fusn.FusionOptFrag">
+
+    <TextView
+        android:id="@+id/emptyFusion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Please, Login to all accounts!\n(To enjoy 'Fusion')"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/fusionRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:focusableInTouchMode="true"
+            android:id="@+id/limitInFusion"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/limitFSetButton"
+            android:hint="Enter number of posts to get"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/limitFSetButton"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Fetch" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/FusnRecyclerViewIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/limitInFusion"
+            android:background="#B3E5FC"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+</FrameLayout>

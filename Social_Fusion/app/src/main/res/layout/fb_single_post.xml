@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/fbposter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/postImage"
+        android:textSize="@dimen/tw__card_font_size_medium" />
+
+    <TextView
+        android:id="@+id/fbpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fbposter"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/postImage" />
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>
