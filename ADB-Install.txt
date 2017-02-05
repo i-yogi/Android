@@ -1,0 +1,8 @@
+1. Open any Android Project 
+2. Goto Files->Project Structure
+3. Copy Java SDK PATH
+4. Close down Android Studio
+5. In a Terminal create '.bash_profile' file using vim
+		- vi ~/.bash_profile
+6. export PATH=<paste copied path here>append..sdk/tools:<path>/platform-tools:$PATH
+7. save and exit

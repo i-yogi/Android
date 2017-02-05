@@ -1,0 +1,44 @@
+#15 Nov, 2015
+#Udemy CourseWork
+
+*New in Android 6 Marshmallow
+
+	-ART runtime- Dynamically moves memory
+	-64 bit
+	-Supports Native Code
+	-New JobScheduler to improve battery
+	-Webview(?)
+	-Android Extension Pack: Desktop Style Graphics
+		OpenGL ES 3.1(shaders)(?)
+	-5000 New API's
+
+*Setting Up
+	-JDK: Download and Install
+	-Android Studio: Download and Follow Instructions to Install
+		-Configure
+		 -Preferences
+		  -Appearance & Behavior
+		   -System Settings
+		    -Update
+		    		Turn Auto Updates On
+		    -Android SDK
+			-SDK Tools
+				Install -Documentation
+					-Android Support Library
+				Launch Standalone SDK Manager
+					-Deselect all
+					-Install Sample SDK
+		  -Editor-General
+		  	-Appearance
+		  		Turn 'Show Line No.' On
+		  		      -Code Folding
+		  	-Code Folding
+		  		Turn Off File Header,Imports & 1Line Methods
+		  	-Auto Import
+		  		Turn On Optimization on fly and Add 
+		  			unambiguous imports
+		-Project Defaults-Project Structure
+			Check JDK location
+		 
+			
+
